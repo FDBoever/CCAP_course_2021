@@ -7,9 +7,9 @@ All files used in this tutorial are accessible via [github/FDBoever/CCAP_Course_
 
 
 
-##Introduction
+## Introduction
 
-###What is this course about?
+### What is this course about?
 
 This tutorial is meant as a guide for obtaining and using sequence data from our [sequence collection](...) to build and visualise phylogenetic trees using freely available online tools. This is not a course on the [theory of phylogenetics](https://www.ebi.ac.uk/training/online/courses/introduction-to-phylogenetics/what-is-phylogenetics/), nor is it designed for more advanced phylogenetic analysis. Instead, the aim of this tutrial is to show a quick-and-easy, yet, powerful approach to build and beautify robust phylogenetic trees based on SSU rDNA sequences.
 
@@ -29,7 +29,7 @@ This tutorial is meant as a guide for obtaining and using sequence data from our
 
 <br>
  
-##Step 1: Download SSU sequences and associated metadata
+## Step 1: Download SSU sequences and associated metadata
 To build molecular phylogenies, we need a gene that is present in all organisms we want to relate. Owing to it's ubiquity, the small-subunit (SSU) rDNA sequence has been proposed as a phylogenetic marker to infer universal relatedness of all life (Carl Woese, 1977), and since became the most popular marker to study relatedness and diveristy of prokaryotes (16S) and eukaryotes (18S). Thanks to it's populatirity, and continuous advances in sequenceing technologies, the SSU rDNA gene has been routenely sequenced from both cultured organisms as well as environmental samples, covering the enormous taxonomic diversity of life. 
 
 At CCAP, there is a continuous effort to "barcode" the entire culture collection with a focus on the rDNA operon. Moreover, researches around the globe continue to sequence DNA from CCAP strains, resulting in a growing amount of data that is often difficult to find, or link back to the organisms and it's metadata. To facilitate the use of sequence data associated with the CCAP culture collection, we recently developed an in-house sequence database that is publically accessible via a [website](http://vallarta:3838/test-ccap-app/#!/). Its aim is to provide a central platform that allows users to browse and access CCAP-associated sequences, meta-data and common analysis results.
@@ -38,7 +38,7 @@ In this tutorial, we will browse and download sequence data from the website, an
 
 
 
-###Procedure
+### Procedure
 
  * Go to [CCAPs' bioinformatics Gateway](http://vallarta:3838/test-ccap-app/)
  * Search for "Nannochloropsis" 
@@ -54,10 +54,10 @@ In this tutorial, we will browse and download sequence data from the website, an
 
 
 
-##Step 2: Align SSU sequences using Silva
+## Step 2: Align SSU sequences using Silva
 Although we have now obtained a number of homologous 18S sequences, they may vary in length and composition. Prior to infering evolutionary relationships between sequenes, we need to identify homologous sites in these sequences, by  generating sequence alignments. Due to evolution (substitutions, insertions/deletions), sequence errors and analysis errors, it is often not trivial to know when the same site in two different sequences is homologous. Many tools exist for aligning multiple sequences (muscle, mafft, clustalw, t-coffee, ...), some of which can include information of the molecule's secondary structure to help assign homologous sites. A widely used method for aligning SSU/LSU sequences is the [Silva-algignment tool](https://www.arb-silva.de/aligner/), which uses structural information and a manually curated super-alignment to align a set of input sequences. 
 
-###Procedure
+### Procedure
 
  * Go to [https://www.arb-silva.de/aligner/](https://www.arb-silva.de/aligner/)
  * paste your the content of your fasta file inside the text field or click "select file"
@@ -85,14 +85,14 @@ Great, you now aligned your 18S sequences! It is always advised to inspect your 
 
 
 
-##Step 3: Build phylogeny using IQ-TREE
+## Step 3: Build phylogeny using IQ-TREE
 
 Now that we are reasonably confident about our identification of homologous characters across our sequences (e.g. the alignment), we can build a phylogenetic tree. A variety of very distinct and often complex algorithm (Parsimony, Maximum-likelihood, Bayesian) exist, and resulting trees are often clouded by uncertainty of certain branching patterns expressed in likelihoods and probabilities. Although phylogenetics often appears like a dark art, these methods share the goal to find a tree that best explains the character data according to evolutionary process and an optimality criterion. In essense many possible trees are compared and the tree with the best value wins, representing the single "best" phylogeny. For example, one such optimality criterion is Maximum-likelihood, where the tree that maximising the likelihood of observing the character matrix and a given model of character evolution wins.
 
 We will use [IQ-tree](https://doi.org/10.1093/nar/gkw256), an excelent and well maintained platform for phylogenetic analysis (notable alternatives are PAUP, Phylip, RAxML for Maximim-likelihood, PAUP, TNT for parsimony and PhyloBayes, MrBayes for Bayesian inference). We will use the alignment obtained in previous step.
 
 
-###Procedure
+### Procedure
 
  * Go to [IQ-TREE web server](http://iqtree.cibiv.univie.ac.at/)
  * upload your alignment file by clicking "Bowse..." in the Input Data section
@@ -112,11 +112,11 @@ We will use [IQ-tree](https://doi.org/10.1093/nar/gkw256), an excelent and well 
 <br>
 
 
-##Step 4: Visualise and annotate phylogenetic trees
+## Step 4: Visualise and annotate phylogenetic trees
 
 Infomation associated with taxon may be analysed in the context of the evolutionary history, for example trees can be annotated using metadata, such as isolation source,... vislualising organisms isolation source
 
-###iTOL
+### iTOL
 
 [iTOL](https://itol.embl.de/)
 
@@ -127,7 +127,7 @@ you can upload your tree on the
 
 
 
-###FigTree
+### FigTree
 
 [FigTree](http://tree.bio.ed.ac.uk/software/figtree/)
 
@@ -143,7 +143,7 @@ ggtree, with great tutorials ([ggtree-book](https://guangchuangyu.github.io/ggtr
 
 # Things to consider
 
-##Blast against CCAP sequence database
+## Blast against CCAP sequence database
 
 we have implemented a blast search function onIf you have a sequence of your organism of interest, and want to know if CCAP holds similar strains
 
