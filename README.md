@@ -3,7 +3,7 @@
 F. De Boever & D. Green
 
 
-All files used in this tutorial are accessible via [github/FDBoever/CCAP_Course_2021](github/FDBoever/CCAP_Course_2021)
+All files used in this tutorial are accessible via [github](https://github.com/FDBoever/CCAP_course_2021)
 
 
 
@@ -46,7 +46,8 @@ In this tutorial, we will browse and download sequence data from the website, an
  * Save the files somewhere sensible on your computer
 
 
-![sq](/Users/sa01fd/Desktop/Screenshot 2021-02-18 at 20.43.38.png)
+![sq](./images/1.png)
+
 <br>
 
 
@@ -66,7 +67,8 @@ Although we have now obtained a number of homologous 18S sequences, they may var
  
   
 <br>
-![silva1](/Users/sa01fd/Downloads/Screenshot 2021-02-16 at 11.27.00.png)
+
+![silva1](./images/silva1.png)
 
 
 
@@ -74,14 +76,14 @@ Although we have now obtained a number of homologous 18S sequences, they may var
  * To download the sequence alignments click on `Download File` and chose zip 
  
 <br>
-![silva2](/Users/sa01fd/Desktop/Screenshot 2021-02-19 at 17.58.50.png)
+
+![silva3](./images/silva3.png)
 
 Great, you now aligned your 18S sequences! It is always advised to inspect your  alignments before continuing to build a tree. 
 
 
  * Consider to explore the alignment using `wasabi` or other free-tools such as   [aliview](https://ormbunkar.se/aliview/)
 
-![silva3](/Users/sa01fd/Desktop/Screenshot 2021-02-16 at 11.29.07.png)
 
 
 
@@ -102,7 +104,8 @@ We will use [IQ-tree](https://doi.org/10.1093/nar/gkw256), an excelent and well 
  * submit and wait until the job is finished.
 
 
-![iqtree](/Users/sa01fd/Desktop/Screenshot 2021-02-19 at 20.02.12.png)
+![iqtree](./images/iqtree2.png)
+
 
 
  * Once completed, download and unzip the files
