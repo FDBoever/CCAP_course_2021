@@ -16,10 +16,10 @@ This tutorial is meant as a guide for obtaining and using sequence data from our
 
 ### What will you achieve?
 
-* Download SSU sequences and associated metadata from the CCAP sequence collection
-* Align SSU sequences using Silva
-* Build phylogenetic trees using IQ-TREE
-* Visualise and annotate phylogenetic trees
+* [Step 1](#step-1-download-ssu-sequences-and-associated-metadata): Download SSU sequences and associated metadata from the CCAP sequence collection
+* [Step 2](#step-2-align-ssu-sequences-using-silva): Align SSU sequences using Silva
+* [Step 3](#step-3-build-phylogeny-using-iq-tree): Build phylogenetic trees using IQ-TREE
+* [Step 4](#step-4-visualise-and-annotate-phylogenetic-trees): Visualise and annotate phylogenetic trees
 
 
 ### What is required
