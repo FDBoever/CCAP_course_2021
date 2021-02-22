@@ -35,7 +35,7 @@ To build molecular phylogenies, we need a gene that is present in all organisms 
 
 At CCAP, there is a continuous effort to "barcode" the entire culture collection with a focus on the rDNA operon. Moreover, researches around the globe continue to sequence DNA from CCAP strains, resulting in a growing amount of data that is often difficult to find, or link back to the organisms and it's metadata. To facilitate the use of sequence data associated with the CCAP culture collection, we recently developed an in-house sequence database that is publically accessible via a [website](http://vallarta:3838/test-ccap-app/#!/). Its aim is to provide a central platform that allows users to browse and access CCAP-associated sequences, meta-data and common analysis results.
 
-In this tutorial, we will browse and download sequence data from the website, and show-case it's usage by building  phylogenetic trees. In this step you will obtain a fasta file with the sequences to build a tree, and a CSV file that will be useful to annotate the tree later on.
+In this tutorial, we will browse and download sequence data from the website, and show-case it's usage by building  phylogenetic trees. In this step you will obtain a fasta file with the sequences to build a tree, and a TXT file that will be useful to annotate the tree later on.
 
 
 
