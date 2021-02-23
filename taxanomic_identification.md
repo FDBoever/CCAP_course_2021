@@ -1,3 +1,9 @@
+---
+title: taxonomic_ID
+layout: template
+filename: taxonomic_identification
+--- 
+
 # Introductory tutorial to help you taxonomically identify your ribosomal sequence data
 
 D. Green & F. De Boever
