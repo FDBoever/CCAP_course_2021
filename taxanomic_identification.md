@@ -52,13 +52,13 @@ Inside the folder you will find the R script called `Taxonomic_ID_with_Dada2.R`.
 
 
 
-###Arguments
+### Arguments
 1. fasta file (for example 18S.fasta)
 2. database name (`pr2` or  `silva`) 
 3. molecule (`18s` or `16s`)
 
 
-###Usage
+### Usage
 
 ```S
 Rscript Taxonomic_ID_with_Dada2.R <fasta file> <database> <molecule>
