@@ -1,7 +1,7 @@
 ---
 title: CCAP_course_2021
 layout: template
-filename: index.md
+filename: index
 --- 
 
 ## Welcome to GitHub Pages
