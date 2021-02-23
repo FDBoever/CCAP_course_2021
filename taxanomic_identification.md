@@ -1,7 +1,7 @@
 ---
 title: taxonomic_ID
 layout: template
-filename: taxonomic_identification
+filename: taxanomic_identification
 --- 
 
 # Introductory tutorial to help you taxonomically identify your ribosomal sequence data
