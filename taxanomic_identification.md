@@ -25,7 +25,7 @@ This is a brief introduction and companion tutorial to that provided for the CCA
 Although the script should install the required R packages automatically ([dplyr](https://dplyr.tidyverse.org/), [Biostrings](https://bioconductor.org/packages/release/bioc/html/Biostrings.html) and [dada2](https://benjjneb.github.io/dada2/tutorial.html)), you can install them manually if you like:
 
 
-```r
+```S
 install.packages("BiocManager")
 BiocManager::install(c("Biostrings", "dada2"))
 install.packages("dplyr")
@@ -60,13 +60,13 @@ Inside the folder you will find the R script called `Taxonomic_ID_with_Dada2.R`.
 
 ###Usage
 
-```sh
+```S
 Rscript Taxonomic_ID_with_Dada2.R <fasta file> <database> <molecule>
 ```
 
 For example, when for a fasta file with name 18S.fasta, we chose to use the PR2 database and specify 18S 
 
-```sh
+```S
 Rscript Taxonomic_ID_with_Dada2.R 18S.fasta pr2 18s
 ```
 
@@ -85,14 +85,9 @@ NB. The following examples assume you have navigated to the folder that contains
 
 if using unix command line and R is installed, you can call Rscript to run scripts.
 
-```
+```S
 Rscript Taxonomic_ID_with_Dada2.R 18S.fasta pr2 18s
 ```
-
-
-
-
-## Step 2: Run it!
 
 
 
