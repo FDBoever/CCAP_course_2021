@@ -50,6 +50,11 @@ Inside the folder you will find the R script called `Taxonomic_ID_with_Dada2.R`.
 
 ## Step 2: Run Taxonomic\_ID\_with\_Dada2.R
 
+Note, that where ever you start the script from, will be where your output files will be saved
+
+NB. The following examples assume you have navigated to the folder that contains the R script and your fasta file.
+
+if using unix command line and R is installed, you can call Rscript to run scripts.
 
 
 ### Arguments
@@ -70,24 +75,6 @@ For example, when for a fasta file with name 18S.fasta, we chose to use the PR2 
 Rscript Taxonomic_ID_with_Dada2.R 18S.fasta pr2 18s
 ```
 
-
-
-## Step 2
-Taxonomic_ID_with_Dada2.R
-
-
-## Step 2: Run it!
-
-Note, that where ever you start the script from, will be where your output files will be saved
-
-NB. The following examples assume you have navigated to the folder that contains the R script and your fasta file.
-
-
-if using unix command line and R is installed, you can call Rscript to run scripts.
-
-```S
-Rscript Taxonomic_ID_with_Dada2.R 18S.fasta pr2 18s
-```
 
 
 
