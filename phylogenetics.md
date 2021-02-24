@@ -91,8 +91,12 @@ Great, you now aligned your 18S sequences! It is always advised to inspect your 
 
  * Consider to explore the alignment using `wasabi` or other free-tools such as   [aliview](https://ormbunkar.se/aliview/)
 
+### use Wasabi to trim sequence
+1. Click on the settings icon (cogs) at the top of the wasabi screen and select "hide gaps"
+2. we can remove positions that are only represented by x sequences. In this example we have 12 sequences, and we want to retain only those positions present in all. So we fill in 11 (12-1) and click "Apply" (see figure)
+3. to export the trimmed alignment click on the file icon at the top of the screen and select export, change the name if you like, and leave the default settings.
 
-
+![wasabi2](./images/wasabi2.png)
 
 ## Step 3: Build phylogeny using IQ-TREE
 
@@ -160,6 +164,15 @@ Several R packages exist to visualise trees, such as `ggtree` with great documen
 Alternatively, you can have a look at our tutorial ["Visualise trees in R"](https://fdboever.github.io/CCAP_course_2021/visualise_tree_R.html)
 
 
+<br>
+<br>
 
+### Note
 
+> You will have noticed that initially we looked for Nannochloropsis strains on the CCAP site, and now reveal a phylogeny with two main groups, one of which contains Microchloropsis strains. Why? 
+> 
+> In 2015 [Fawley et al.](https://doi.org/10.2216/15-60.1) recognised this split and revised the taxonomy of Nannochloropsis with the errection of a new genus Microchloropsis. Microchloropsis gaditana and M. salina used to be called Nannochloropsis gadicata and N. gaditana respectively. Although CCAP has renamed it's strains accodingly, NCBI metadata keeps their original submission name, and hence we picked it up.
+> 
+> Also our tree supports the idea of two distinct lineages in what used to be called the Nannochloropsis lineage
+> This also shows that we need to be careful, and check the origin and metadata of sequences obtained from public repositories. If you would only be interested in building phylogeny of Nannochloropsis sensu strictu, you could remove the unwanted sequences from the fasta file and repeat the above proces... 
 
