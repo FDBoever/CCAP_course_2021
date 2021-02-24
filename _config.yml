@@ -2,3 +2,11 @@ title: "CCAP Tutorials"
 remote_theme: pmarsceill/just-the-docs
 search_enabled: false
 color_scheme: custom_scheme
+
+plugins:
+  - jekyll-seo-tag
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
