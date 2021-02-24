@@ -1,0 +1,103 @@
+---
+title: "Phylogenetics in R"
+author: "F. De Boever"
+date: "24/02/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This is an R Markdown document that will guide you through some basic R code for phylogenetic analysis.
+
+
+## Getting set up
+
+```{r}
+setwd("~/Github/CCAP_course/main/examlpes")
+```
+
+```{r,results='hide'}
+library(seqinr) #to read in fasta files
+library(msa) #for sequence alignments
+library(ape) #to work with phylogenies
+library(phangorn) #to build phylogenies
+library(ips)
+```
+
+## Alignment
+
+##
+```{r}
+
+#fasta <- readDNAStringSet("~/Github/CCAP_course/main/examlpes/arb-silva.de_2021-02-19_id960365.fasta",format='fasta')
+#conversion between formats
+#fasta <- as.DNAbin(fasta)
+#trimEnds(fasta)
+```
+
+
+```{r}
+# Import data [fasta.dna=https://pastebin.com/8Mt3QUTV]
+#fasta <- read.dna("~/Github/CCAP_course/main/examlpes/arb-silva.de_2021-02-19_id960365.fasta",format='fasta')
+
+
+fasta <- as.DNAbin(read.alignment("~/Github/CCAP_course/main/examlpes/arb-silva.de_2021-02-19_id960365.fasta",format='fasta'))
+fasta <- trimEnds(fasta)
+fasta_phyDat <- phyDat(fasta, type = "DNA")
+
+# Subset (first ten)
+fasta10 <- subset(fasta_phyDat, 1:10)
+fasta10_phyDat <- phyDat(fasta10, type = "DNA", levels = NULL)
+```
+
+## model testing
+One option is to convert the alignment into a pairwise distances, which will speed up the inference of a tree. We'll need to decide on the model of nucleotide evolution that best fits the data, performing a likelihood ratio test as implemented in modelTest.
+
+```{r}
+mt <- modelTest(fasta10)
+print(mt)
+dna_dist <- dist.ml(fasta10, model="JC")
+```
+
+Neighbor Joining and UPGMA
+We can estimate trees from distance matrices using neighbor-joining and UPGMA algorithims
+
+```{r}
+fasta_UPGMA <- upgma(dna_dist)
+fasta_NJ  <- NJ(dna_dist)
+plot(fasta_UPGMA, main="UPGMA")
+plot(fasta_NJ, main="NJ")
+
+```
+
+Which tree firts our data best? we can use parsimony() function to compare their respective parsimony scores. The function like optim.parsimony() and prachet() takes this a little further, and are worth exploring
+
+## Maximum likelihood and bootstrapping
+
+calculate the likelihood of a given tree using pml(), and use the function optim.pml() to optimize tree tolopogies and branch lengths for your selected model of nucleotide evolution
+
+```{r}
+fit <- pml(fasta_NJ, fasta10)
+print(fit)
+```
+
+```{r}
+fitJC <- optim.pml(fit, model = "JC", rearrangement = "stochastic")
+```
+
+```{r}
+bs <- bootstrap.pml(fitJC, bs=100, control = pml.control(trace=0))
+plotBS(midpoint(fitJC$tree), bs, p = 50, type="p")
+```
+
+
+## Exporting trees
+```{r}
+write.tree(bs, file="bootstrap_example.tre")
+```
+
+
