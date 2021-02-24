@@ -1,5 +1,5 @@
 ---
-title: taxonomic identification
+title: Taxonomic identification
 parent: CCAPcource2021
 nav_order: 2
 --- 
