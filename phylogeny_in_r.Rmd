@@ -3,6 +3,8 @@ title: "Phylogenetics in R"
 author: "F. De Boever"
 date: "24/02/2021"
 output: html_document
+nav-order: 4
+parent: CCAPcource2021
 ---
 
 ```{r setup, include=FALSE}
