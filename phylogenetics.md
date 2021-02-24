@@ -124,28 +124,40 @@ We will use [IQ-tree](https://doi.org/10.1093/nar/gkw256), an excelent and well 
 
 ## Step 4: Visualise and annotate phylogenetic trees
 
-Infomation associated with taxon may be analysed in the context of the evolutionary history, for example trees can be annotated using metadata, such as isolation source,... vislualising organisms isolation source
+Infomation associated with taxon may be analysed in the context of the evolutionary history, for example trees can be annotated using metadata, such as isolation source, taxonomy, etc. Here are some examples of online and offline tools that are worth exploring
 
 ### iTOL
 
-[iTOL](https://itol.embl.de/)
+[iTOL](https://itol.embl.de/) is an excelent online tool to visualise trees. 
 
-you can upload your tree on the 
-
- * go to [iTOL website](https://itol.embl.de/upload.cgi)
- * you can drag and drop your tree file, or select it from you browser
-
+ 1. go to [iTOL website](https://itol.embl.de/upload.cgi)
+ 2. You can register if you want your trees to be remembered, or click on the "upload" tab
+ 3. you can drag and drop your tree file here, or select it from you browser
 
 
 ### FigTree
+[FigTree](http://tree.bio.ed.ac.uk/software/figtree/) is a small and handy program you can download for free, it is very intuitive and offers a great deal of visualisation options
 
-[FigTree](http://tree.bio.ed.ac.uk/software/figtree/)
+1. Download and install [FigTree](http://tree.bio.ed.ac.uk/software/figtree/)
+2. Open FigTree
+3. Open the tree in Figtree by clicking File > Open...
+4. Click on File again and click "Import Annotations..." 
+5. Click on “Node Labels” on the left tab and choose “Display”
+as “strainName” and colour as "Genus_Name", see figure below. 
+
+
+
+
+
+![sq](./images/figtree.png)
+
 
 
 ### R
 
-ggtree, with great tutorials ([ggtree-book](https://guangchuangyu.github.io/ggtree-book/)) 
+Several R packages exist to visualise trees, such as `ggtree` with great documentation ([ggtree-book](https://guangchuangyu.github.io/ggtree-book/)).  
 
+Alternatively, you can have a look at our tutorial ["Visualise trees in R"](https://fdboever.github.io/CCAP_course_2021/visualise_tree_R.html)
 
 
 
