@@ -10,7 +10,7 @@ output:
 ---
 
 # Phylogenetics in R
-F. De Boever
+F. De Boever & D. Green
 
 ## Introduction
 
