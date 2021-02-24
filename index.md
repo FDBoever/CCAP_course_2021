@@ -1,7 +1,7 @@
 ---
 title: CCAP_course_2021
-layout: template
-filename: index
+parent: CCAPcource2021
+nav_order: 1
 --- 
 
 # Bioinformatics Gateway Test Examples

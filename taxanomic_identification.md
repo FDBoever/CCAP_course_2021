@@ -1,7 +1,7 @@
 ---
 title: taxonomic_ID
-layout: template
-filename: taxanomic_identification
+parent: CCAPcource2021
+nav_order: 2
 --- 
 
 # Introductory tutorial to help you taxonomically identify your ribosomal sequence data
