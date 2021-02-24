@@ -9,7 +9,8 @@ output:
     keep_md: yes
 ---
 
-
+# Phylogenetics in R
+F. De Boever
 
 ## Introduction
 
@@ -27,116 +28,6 @@ setwd("~/Github/CCAP_course/main/examlpes")
 ```r
 library(seqinr) #to read in fasta files
 library(msa) #for sequence alignments
-```
-
-```
-## Loading required package: Biostrings
-```
-
-```
-## Loading required package: BiocGenerics
-```
-
-```
-## Loading required package: parallel
-```
-
-```
-## 
-## Attaching package: 'BiocGenerics'
-```
-
-```
-## The following objects are masked from 'package:parallel':
-## 
-##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
-##     clusterExport, clusterMap, parApply, parCapply, parLapply,
-##     parLapplyLB, parRapply, parSapply, parSapplyLB
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     IQR, mad, sd, var, xtabs
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     anyDuplicated, append, as.data.frame, basename, cbind, colnames,
-##     dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
-##     grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
-##     order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
-##     rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
-##     union, unique, unsplit, which, which.max, which.min
-```
-
-```
-## Loading required package: S4Vectors
-```
-
-```
-## Loading required package: stats4
-```
-
-```
-## 
-## Attaching package: 'S4Vectors'
-```
-
-```
-## The following object is masked from 'package:base':
-## 
-##     expand.grid
-```
-
-```
-## Loading required package: IRanges
-```
-
-```
-## Loading required package: XVector
-```
-
-```
-## 
-## Attaching package: 'Biostrings'
-```
-
-```
-## The following object is masked from 'package:seqinr':
-## 
-##     translate
-```
-
-```
-## The following object is masked from 'package:base':
-## 
-##     strsplit
-```
-
-```r
-library(ape) #to work with phylogenies
-```
-
-```
-## 
-## Attaching package: 'ape'
-```
-
-```
-## The following object is masked from 'package:Biostrings':
-## 
-##     complement
-```
-
-```
-## The following objects are masked from 'package:seqinr':
-## 
-##     as.alignment, consensus
-```
-
-```r
 library(phangorn) #to build phylogenies
 library(ips)
 ```
