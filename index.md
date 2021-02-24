@@ -1,10 +1,10 @@
 ---
-title: CCAP_course_2021
+title: Phylogenetics
 parent: CCAPcource2021
 nav_order: 1
 --- 
 
-# Bioinformatics Gateway Test Examples
+# Quick-and-easy SSU Phylogenies
 
 F. De Boever & D. Green
 
