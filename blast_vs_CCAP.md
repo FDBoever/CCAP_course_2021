@@ -1,7 +1,7 @@
 ---
 title: Blast against CCAP sequence database
 parent: CCAPcource2021
-nav_order: 2
+nav_order: 3
 --- 
 
 
