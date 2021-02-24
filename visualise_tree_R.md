@@ -110,12 +110,6 @@ p.2 <- ggtree(mid.point.rooted.tree, layout='circular')+geom_tiplab()
 p.3  <- ggtree(mid.point.rooted.tree, layout='fan', open.angle=180) + geom_tiplab()
 ```
 
-```
-## Scale for 'y' is already present. Adding another scale for 'y', which will
-## replace the existing scale.
-```
-
-
 Consider our first `ggtree` object stored in the variable p
 we can have a look at what is inside using the `str()` function. `str()` is very useful in general and should become one of your best friends in R
 
