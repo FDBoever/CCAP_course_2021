@@ -6,8 +6,8 @@ nav_order: 2
 
 # CCAP COURSE 2021
 
-Tutorials and course material as part of the Algaculture for Biotechnology training cousre program 24-26 Feb 2021
+Bioinformatics tutorials and course material as part of the Algaculture for Biotechnology training cousre program 24-26 Feb 2021
 
 
-> All files used in this tutorial are accessible via [github](https://github.com/FDBoever/CCAP_course_2021)
+> All files used in this tutorial are accessible via [github](https://github.com/FDBoever/CCAP_course_2021) or [zip file](https://github.com/FDBoever/CCAP_course_2021/archive/main.zip)
 
