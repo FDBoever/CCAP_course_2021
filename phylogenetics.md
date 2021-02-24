@@ -171,8 +171,7 @@ Alternatively, you can have a look at our tutorial ["Visualise trees in R"](http
 
 > You will have noticed that initially we looked for Nannochloropsis strains on the CCAP site, and now reveal a phylogeny with two main groups, one of which contains Microchloropsis strains. Why? 
 > 
-> In 2015 [Fawley et al.](https://doi.org/10.2216/15-60.1) recognised this split and revised the taxonomy of Nannochloropsis with the errection of a new genus Microchloropsis. Microchloropsis gaditana and M. salina used to be called Nannochloropsis gadicata and N. gaditana respectively. Although CCAP has renamed it's strains accodingly, NCBI metadata keeps their original submission name, and hence we picked it up.
+> In 2015 [Fawley et al.](https://doi.org/10.2216/15-60.1) recognised this split and revised the taxonomy of Nannochloropsis with the errection of a new genus Microchloropsis. Microchloropsis gaditana and M. salina used to be called Nannochloropsis gadicata and N. gaditana respectively (yes our tree also supports this split). Although CCAP has renamed it's strains accodingly, NCBI metadata keeps their original submission name, and hence we picked it up.
 > 
-> Also our tree supports the idea of two distinct lineages in what used to be called the Nannochloropsis lineage
 > This also shows that we need to be careful, and check the origin and metadata of sequences obtained from public repositories. If you would only be interested in building phylogeny of Nannochloropsis sensu strictu, you could remove the unwanted sequences from the fasta file and repeat the above proces... 
 
