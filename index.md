@@ -4,9 +4,9 @@ has_children: true
 nav_order: 2
 ---
 
-# CCAP COURSE 2023
+# CCAP COURCE
 
-Bioinformatics tutorials and course material as part of the Algaculture for Biotechnology training cousre program 
+Bioinformatics tutorials and course material as part of the Algaculture for Biotechnology training cousre program:
 24-26 Feb 2021
 2022
 2023
